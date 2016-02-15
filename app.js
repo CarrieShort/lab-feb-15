@@ -37,7 +37,7 @@ function sumAndMultiply(num1,num2,num3){
   console.log(num1 + ' and ' + num2 + ' and ' + num3 + ' sum to ' + sumTotal + '.');
 
   console.log('The numbers ' + num1 + ' and ' + num2 + ' and ' + num3 + ' have a product of ' + multiplyTotal + '.');
-  
+
   var smArray = [sumTotal, multiplyTotal];
   return smArray;
 }
