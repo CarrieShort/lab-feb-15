@@ -45,9 +45,19 @@ function sumAndMultiply(num1,num2,num3){
 function sumArray(myArray) {
   console.table(myArray);
   var arraySum = myArray[0];
-  for (i=1; i < myArray.length; i++) {
+  for (var i=1; i < myArray.length; i++) {
     arraySum += myArray[i];
   }
   console.log(myArray.toString() + ' was passed in as an array of numbers, and ' + arraySum + ' is their sum.');
   return arraySum;
+}
+
+function multiplyArray(myArray) {
+  console.table(myArray);
+  var arrayProduct = myArray[0];
+  for (var i=1; i < myArray.length; i++) {
+    arrayProduct *= myArray[i];
+  }
+  console.log('The numbers ' + myArray.toString() + ' have a product of ' + arrayProduct + '.');
+  return arrayProduct;
 }
