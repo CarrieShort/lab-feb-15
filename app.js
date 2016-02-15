@@ -41,3 +41,13 @@ function sumAndMultiply(num1,num2,num3){
   var smArray = [sumTotal, multiplyTotal];
   return smArray;
 }
+
+function sumArray(myArray) {
+  console.table(myArray);
+  var arraySum = myArray[0];
+  for (i=1; i < myArray.length; i++) {
+    arraySum += myArray[i];
+  }
+  console.log(myArray.toString() + ' was passed in as an array of numbers, and ' + arraySum + ' is their sum.');
+  return arraySum;
+}
