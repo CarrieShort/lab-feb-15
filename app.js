@@ -17,12 +17,27 @@ if (ans1.toLowerCase() === 'n' || ans1.toUpperCase() === 'NO') {
 
 function sum(num1,num2){
   var total = num1 + num2;
-  console.log('The sum of ' + num1 + ' and ' + num2 + ' is ' + total + '.');
+  //console.log('The sum of ' + num1 + ' and ' + num2 + ' is ' + total + '.');
   return total;
 }
 
 function multiply(num1,num2) {
   var total = num1 * num2;
-  console.log('The product of ' + num1 + ' and ' + num2 + ' is ' + total + '.');
+  //console.log('The product of ' + num1 + ' and ' + num2 + ' is ' + total + '.');
   return total;
+}
+
+function sumAndMultiply(num1,num2,num3){
+  var sumStep1 = sum(num1,num2);
+  var sumTotal = sum(sumStep1,num3);
+
+  var multiplyStep1 = multiply(num1,num2);
+  var multiplyTotal = multiply(multiplyStep1,num3);
+
+  console.log(num1 + ' and ' + num2 + ' and ' + num3 + ' sum to ' + sumTotal + '.');
+
+  console.log('The numbers ' + num1 + ' and ' + num2 + ' and ' + num3 + ' have a product of ' + multiplyTotal + '.');
+
+  var smArray = [sumTotal, multiplyTotal];
+  return smArray;
 }
